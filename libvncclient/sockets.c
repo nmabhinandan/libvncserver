@@ -39,6 +39,7 @@
 #include <rfb/rfbclient.h>
 #ifdef WIN32
 #undef SOCKET
+#pragma comment(lib, "Ws2_32.lib")
 #include <winsock2.h>
 #define EWOULDBLOCK WSAEWOULDBLOCK
 #define close closesocket
